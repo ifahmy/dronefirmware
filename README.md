@@ -36,9 +36,7 @@ dfu-util -a 0 --dfuse-address 0x08000000 –D fmuv5_bl.binfile
 ```
 
 #### Betaflight:
-```bash
-dfu-util -a 0 -s 0x08000000:leave -D stm32f7x2_bf_bootloader.hex
-```
+In Configurator, enter DFU mode (like we did for ArduPilot) and flash any F7 target onto the board. This doesn’t matter too much, as we will be making a custom target later. 
 
 > After this step, you no longer need BOOT0 or RESET toggles. Just plug in USB for firmware flashing.
 
