@@ -4,7 +4,7 @@ This repo documents how to bring up a custom STM32F722RET6-based flight controll
 
 ---
 
-## 🔧 Hardware Overview
+## Hardware Overview
 
 | Component       | Interface | MCU Pins       |
 |----------------|-----------|----------------|
@@ -20,7 +20,7 @@ This repo documents how to bring up a custom STM32F722RET6-based flight controll
 
 ---
 
-## 🧰 Initial Setup – Flash Bootloader (First Time Only)
+## Initial Setup – Flash Bootloader (First Time Only)
 
 ### 1. Put MCU in DFU Mode:
 - Pull `BOOT0` high
@@ -44,7 +44,7 @@ dfu-util -a 0 -s 0x08000000:leave -D stm32f7x2_bf_bootloader.hex
 
 ---
 
-## 🚁 Installing ArduPilot
+## Installing ArduPilot
 
 ### 1. Clone and set up ArduPilot:
 ```bash
@@ -78,12 +78,12 @@ Edit `libraries/AP_HAL_ChibiOS/hwdef/boards.py`:
 dfu-util -a 0 -s 0x08004000:leave -D build/fahmyboard_f722/copter.bin
 ```
 
-### ✅ Done!
+### Done!
 Connect to **Mission Planner** or **QGroundControl** via USB.
 
 ---
 
-## 🦅 Installing Betaflight
+## Installing Betaflight
 
 ### 1. Clone and set up:
 ```bash
@@ -114,12 +114,12 @@ make fahmyboard_f722:dfu
 - Load `.hex` from `obj/firmware_fahmyboard_f722.hex`
 - Click **Flash Firmware**
 
-### ✅ Done!
+### Done!
 Set up IMU, barometer, motors, and LED strip in GUI.
 
 ---
 
-## 📂 File Summary
+## File Summary
 
 | File               | Purpose                                |
 |--------------------|----------------------------------------|
