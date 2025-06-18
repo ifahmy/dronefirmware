@@ -36,9 +36,10 @@ dfu-util -a 0 --dfuse-address 0x08000000 –D fmuv5_bl.binfile
 ```
 
 #### Betaflight:
-In Configurator, enter DFU mode (like we did for ArduPilot) and flash any F7 target onto the board. This doesn’t matter too much, as we will be making a custom target later. 
+Since All STM32 MCUs include a ROM-based DFU bootloader by default (no external bootloader required),  like we did before, we simply pull BOOT0 high and reset, and the MCU enters DFU mode using built-in firmware at 0x1FFFxxxx.
+This built-in DFU mode supports flashing directly to 0x08000000 or 0x08004000.
 
-> After this step, you no longer need BOOT0 or RESET toggles. Just plug in USB for firmware flashing.
+> Unlike the bootloader we used for ArduPilot (which would not work for BF), we will need to enter DFU mode every time we flash the board, which is a minor inconvenience but not necessary since we are making a prototype.
 
 ---
 
