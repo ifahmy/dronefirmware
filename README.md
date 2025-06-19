@@ -24,8 +24,8 @@ This repo documents how to bring up a custom STM32F722RET6-based flight controll
 
 ### 1. Put MCU in DFU Mode:
 - Pull `BOOT0` high
-- Tap `NRST` low
 - Connect USB
+- Tap `NRST` low
 
 ### 2. Flash Bootloader (choose one):
 
