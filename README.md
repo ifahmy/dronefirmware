@@ -78,7 +78,7 @@ dfu-util -a 0 -s 0x08004000:leave -D build/fahmyboard_f722/copter.bin
 ```
 
 ### Done!
-Connect to **Mission Planner** or **QGroundControl** via USB.
+Connect to **Mission Planner** via USB.
 
 ---
 
@@ -114,7 +114,7 @@ make fahmyboard_f722:dfu
 - Click **Flash Firmware**
 
 ### Done!
-Set up IMU, barometer, motors, and LED strip in GUI.
+Set up IMU, barometer and motors in Betaflight configurator.
 
 ---
 
