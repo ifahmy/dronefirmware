@@ -1,4 +1,4 @@
-# STM32F722RET6 Custom Flight Controller
+# Tiny Drone STM32F722RET6 Custom Flight Controller Firmware
 
 This repo documents how to bring up a custom STM32F722RET6-based flight controller from a blank PCB to running either **ArduPilot** or **Betaflight**, using USB DFU bootloader flashing — no SWD needed after the first flash.
 
